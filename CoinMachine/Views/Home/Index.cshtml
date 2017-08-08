@@ -1,0 +1,12 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1>Coin Machine</h1>
+
+<form action="/coin/change" method="post">
+  <label for="cents-input">Enter cents: </label>
+  <input id="cents-input" name="cents-input" class="form-control" type="number">
+
+  <button type="submit">Change</button>
+</form>
