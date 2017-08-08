@@ -30,16 +30,16 @@ namespace CoinMachine.Tests
       Assert.AreEqual(expectedResult, actualResult);
     }
 
-    // [TestMethod]
-    // public void CountCoins_ReturnTheNumberOfQuarters_2()
-    // {
-    //   int expectedResult = 2;
-    //   Coins testCoin = new Coins(50);
-    //
-    //   int actualResult = testCoin.CountCoins()["quarters"];
-    //
-    //   Assert.AreEqual(expectedResult, actualResult);
-    // }
+    [TestMethod]
+    public void CountCoins_ReturnTheNumberOfNickels_1()
+    {
+      int expectedResult = 1;
+      Coins testCoin = new Coins(40);
+
+      int actualResult = testCoin.CountCoins()["nickels"];
+
+      Assert.AreEqual(expectedResult, actualResult);
+    }
   }
 
 }
