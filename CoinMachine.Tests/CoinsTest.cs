@@ -42,7 +42,7 @@ namespace CoinMachine.Tests
     }
 
     [TestMethod]
-    public void CountCoins_ReturnTheNumberOfPennies_1()
+    public void CountCoins_ReturnTheNumberOfPennies_2()
     {
       int expectedResult = 2;
       Coins testCoin = new Coins(42);
