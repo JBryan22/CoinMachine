@@ -40,6 +40,17 @@ namespace CoinMachine.Tests
 
       Assert.AreEqual(expectedResult, actualResult);
     }
+
+    [TestMethod]
+    public void CountCoins_ReturnTheNumberOfPennies_1()
+    {
+      int expectedResult = 2;
+      Coins testCoin = new Coins(42);
+
+      int actualResult = testCoin.CountCoins()["pennies"];
+
+      Assert.AreEqual(expectedResult, actualResult);
+    }
   }
 
 }

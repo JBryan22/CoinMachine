@@ -34,6 +34,8 @@ namespace CoinMachine.Models
         _myCoins["nickels"] = remainingCoins / 5;
         remainingCoins %= 5;
 
+        _myCoins["pennies"] = remainingCoins;
+
         return _myCoins;
       }
 
